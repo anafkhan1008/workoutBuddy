@@ -26,6 +26,7 @@ const Add = () => {
       ...workoutData,
       exercises: [...workoutData.exercises, { name: '', sets: '', reps: '', weight: '' }]
     });
+    handleSubmit();
   };
 
   const handleSubmit = async (e) => {
@@ -35,7 +36,6 @@ const Add = () => {
       
     } catch (error) {
       console.error(error);
-      // Handle error
     }
   };
 
